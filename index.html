@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Auto ecole</title>
+  </head>
+  <body>
+    
+    
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <img src="1.jpg" alt="rouad" width="600" height="500">
+      <h2 id="question">يمكن إستعمال هذا الهاتف</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">لقضاء حاجة شخصية</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">لإعلام طبيب</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">في حالة عطب</label>
+        </li>
+</ul>
+    </div>
+    
+    <div class = "controls">
+          <button class="button2" id="submit">خروج</button>
+         <button class = "button1" id="submit" onclick="nextquestion()">التالي</button>
+    </div>
+   
+    
+    <script>
+      
+    </script>
+  </div>
+    
+    <script defer src="./renderer.js"></script>
+    
+  </body>
+</html>
